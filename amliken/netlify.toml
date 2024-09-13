@@ -1,0 +1,12 @@
+[build]
+  # Comando para construir tu proyecto
+  command = "npm run build"
+  # Directorio donde Netlify buscará los archivos generados para servir
+  publish = "dist"
+
+# (Opcional) Configuración para el entorno de desarrollo
+[dev]
+  # Comando para iniciar tu aplicación en el entorno de desarrollo
+  command = "npm run dev"
+  # Directorio raíz del proyecto en el entorno de desarrollo
+  port = 3000
