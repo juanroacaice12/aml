@@ -34,36 +34,32 @@ const Products = () => {
   };
 
   return (
-    <section className="p-8">
-      <h2 className="text-3xl mb-4">Productos</h2>
-      <Slider {...settings}>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/micromedidor.jpg" alt="Micromedidor" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Micromedidores</p>
+    <section id="productos" className="p-10 mb-10 bg-white">
+      <h2 className="text-4xl font-bold text-center mb-12">Nuestros Productos</h2>
+      <Slider {...settings} className="relative">
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonic6.png" alt="Micromedidor" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">MA401</p>
         </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/macro.png" alt="Macromedidor" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Macromedidores</p>
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonic5.png" alt="Macromedidor" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">U-LY 40</p>
         </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/accesorios.png" alt="Accesorios" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Accesorios</p>
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonico.png" alt="Smart Metering" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">Smart Metering</p>
         </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/ultrasonico.jpg" alt="Smart Metering" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Smart Metering</p>
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonic4.png" alt="Medidor Residencial" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">U-WR2</p>
         </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/Residencial.jpg" alt="Medidor Residencial" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Medidores Residenciales</p>
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonico1.png" alt="Medidor Woltmann" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">Lorawan ultrasonic</p>
         </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/woltmman.png" alt="Medidor Woltmann" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Medidores Woltmann</p>
-        </div>
-        <div className="p-4 m-4 bg-gray-100 rounded-lg shadow-lg">
-          <img src="src/assets/medicome.jpg" alt="Medidor Comercial" className="mx-auto h-48 w-48 object-cover" />
-          <p className="text-center mt-2">Medidores Comerciales</p>
+        <div className="p-6 mx-4 bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105">
+          <img src="src/assets/ultrasonic3.png" alt="Medidor Comercial" className="mx-auto h-48 w-48 object-cover rounded-lg border border-gray-300 shadow-md" />
+          <p className="text-center mt-4 text-lg font-semibold text-gray-800">UL-DW</p>
         </div>
       </Slider>
     </section>

@@ -1,63 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const About = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const slides = [
-    {
-      title: 'Quiénes somos',
-      content: 'Somos una empresa dedicada a ofrecer soluciones innovadoras en tecnología y seguridad.',
-      image: 'src/assets/image1.jpg',
-    },
-    {
-      title: 'Qué hacemos',
-      content: 'Proporcionamos servicios de consultoría y auditoría en ciberseguridad para proteger tu información.',
-      image: 'src/assets/image2.jpg',
-    },
-    {
-      title: 'Nuestro compromiso',
-      content: 'Nos comprometemos a ofrecer servicios de la más alta calidad con un enfoque en la excelencia.',
-      image: 'src/assets/image3.jpg',
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Cambia de diapositiva cada 5 segundos
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
+export default function Main() {
   return (
-    <section className="p-8 bg-gradient-to-r from-blue-500 to-white">
-      <div className="relative w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        {/* Texto del Slide */}
-        <div className="relative w-full md:w-1/2 h-96 overflow-hidden rounded-lg shadow-lg mb-6 md:mb-0">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`transition-opacity duration-1000 ease-in-out absolute inset-0 flex items-center justify-center p-6 bg-gray-100 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
-            >
-              <div className="text-center max-w-2xl">
-                <h3 className="text-2xl font-bold mb-4">{slide.title}</h3>
-                <p>{slide.content}</p>
-              </div>
-            </div>
-          ))}
+    <section id="Nosotros">
+    <div className='main-container w-full max-w-[1440px] h-auto bg-white relative overflow-hidden mx-auto py-10'>
+      
+      {/* Contenedor con degradado negro a gris, borde y hover */}
+      <div className='w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto bg-gradient-to-r from-black to-gray-700 p-8 rounded-xl border border-gray-300 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out mb-16'>
+        
+        {/* Contenido de texto */}
+        <div className='w-full text-white text-center mb-6'>
+          <span className="block font-inter text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-tight">
+            ¿Quiénes somos?
+          </span>
+          <span className="block font-inter text-[16px] md:text-[18px] leading-relaxed mt-4">
+            En Amliken, nos dedicamos a ofrecer soluciones avanzadas en medición y control de recursos como energía y agua. 
+            Con años de experiencia y un enfoque en la innovación, ayudamos a nuestros clientes a optimizar sus procesos de manera 
+            eficiente y sostenible. Nuestro compromiso es la precisión y fiabilidad en cada uno de nuestros productos.
+          </span>
         </div>
-
-        {/* Imagen del Slide */}
-        <div className="w-full md:w-1/2 h-96 flex items-center justify-center">
-          <img
-            src={slides[currentSlide].image}
-            alt="Imagen descriptiva"
-            className="w-full h-full object-cover rounded-lg shadow-lg"
+        
+        {/* Logo */}
+        <div className='flex justify-center'>
+          <img 
+            src='src/assets/AMLIKEN lgo.png' // Cambia por la ruta de tu logo
+            alt='Logo de la empresa'
+            className='w-[100px] h-auto md:w-[150px]' 
           />
         </div>
       </div>
+
+    </div>
     </section>
   );
-};
-
-export default About;
+}

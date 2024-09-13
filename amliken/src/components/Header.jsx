@@ -23,12 +23,11 @@ const Header = () => {
       <nav className="hidden md:flex flex-1 justify-center">
         <ul className="flex space-x-8 text-lg font-medium">
           <li><a href="#inicio" className="hover:underline transition duration-300 ease-in-out">Inicio</a></li>
-          <li><a href="#nosotros" className="hover:underline transition duration-300 ease-in-out">Nosotros</a></li>
+          <li><a href="#Nosotros" className="hover:underline transition duration-300 ease-in-out">Nosotros</a></li>
           <li><a href="#productos" className="hover:underline transition duration-300 ease-in-out">Productos</a></li>
           <li><a href="#servicios" className="hover:underline transition duration-300 ease-in-out">Servicios</a></li>
           <li><a href="#noticias" className="hover:underline transition duration-300 ease-in-out">Noticias</a></li>
           <li><a href="#contacto" className="hover:underline transition duration-300 ease-in-out">Contacto</a></li>
-          <li><a href="#trabaja" className="hover:underline transition duration-300 ease-in-out">Trabaja con nosotros</a></li>
         </ul>
       </nav>
 
@@ -42,7 +41,6 @@ const Header = () => {
             <li><a href="#servicios" className="hover:underline" onClick={toggleMenu}>Servicios</a></li>
             <li><a href="#noticias" className="hover:underline" onClick={toggleMenu}>Noticias</a></li>
             <li><a href="#contacto" className="hover:underline" onClick={toggleMenu}>Contacto</a></li>
-            <li><a href="#trabaja" className="hover:underline" onClick={toggleMenu}>Trabaja con nosotros</a></li>
           </ul>
         </nav>
       )}

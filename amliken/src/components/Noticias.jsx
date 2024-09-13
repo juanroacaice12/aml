@@ -5,28 +5,28 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const newsData = [
   { 
-    title: 'Noticia 1', 
-    description: 'Descripción de la noticia 1', 
+    title: 'Innovaciones en Medidores de Agua Inteligentes para 2024', 
+    description: 'Las nuevas tecnologías en medidores de agua inteligentes están transformando la gestión del recurso hídrico. Los avances incluyen mayor precisión, automatización y capacidades de detección de fugas.', 
     date: '2024-09-01',
-    image: 'https://via.placeholder.com/300x200?text=Noticia+1' // URL de ejemplo
+    image: 'src/assets/innovacion.png' // URL de ejemplo
   },
   { 
-    title: 'Noticia 2', 
-    description: 'Descripción de la noticia 2', 
+    title: 'Impacto de los Medidores Inteligentes en la Reducción de Costos Operativos', 
+    description: 'Empresas como Global Omnium e Idrica han implementado medidores inteligentes, logrando una reducción significativa en los costos operativos y mejorando la eficiencia en la gestión del agua.',
     date: '2024-09-02',
-    image: 'https://via.placeholder.com/300x200?text=Noticia+2' // URL de ejemplo
+    image: 'src/assets/Costos.jpg'
   },
   { 
-    title: 'Noticia 3', 
-    description: 'Descripción de la noticia 3', 
+    title: 'Cómo los Medidores de Agua Inteligentes Promueven el Uso Responsable del Agua', 
+    description: 'Los medidores inteligentes no solo optimizan el uso del agua, sino que también fomentan un uso más responsable al proporcionar datos en tiempo real a los consumidores.',
     date: '2024-09-03',
-    image: 'https://via.placeholder.com/300x200?text=Noticia+3' // URL de ejemplo
+    image: 'src/assets/conciencia.jpg'
   },
   { 
-    title: 'Noticia 4', 
-    description: 'Descripción de la noticia 4', 
+    title: 'Tendencias en la Digitalización del Sector Hídrico', 
+    description: 'La digitalización en la gestión del agua, a través de medidores inteligentes y tecnologías emergentes, está cambiando la forma en que se supervisan y gestionan los recursos hídricos.', 
     date: '2024-09-04',
-    image: 'https://via.placeholder.com/300x200?text=Noticia+4' // URL de ejemplo
+    image: 'src/assets/digitalizacion.jpg' // URL de ejemplo
   },
   // Agrega más noticias aquí
 ];
@@ -46,6 +46,7 @@ const settings = {
 
 export default function NewsCarousel() {
   return (
+    <section id="noticias">
     <div className='news-carousel-container w-full max-w-screen-xl mx-auto py-8 px-4 bg-[#fff] mb-20'>
       <h1 className='text-center text-3xl font-bold text-[#000] mb-20'>Noticias</h1>
       <Slider {...settings} className='relative'>
@@ -63,5 +64,6 @@ export default function NewsCarousel() {
         ))}
       </Slider>
     </div>
+    </section>
   );
 }
